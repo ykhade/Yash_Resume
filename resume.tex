@@ -1,0 +1,143 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+   
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[margin=1in]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Yash Khade}}\\
+	Reno, NV $\cdot$ yashkhade@outlook.com $\cdot$ (775)-240-8433 \\ https://ykhade.dev https://www.linkedin.com/in/ykhade/ $\cdot$ https://github.com/ykhade
+\end{center}
+
+%==== Experience ====%
+\header{Skills}
+\begin{tabular}{ l l }
+	\textbf{Languages:}    & C\#  | C++ | JavaScript/TypeScript | Java | Python   \\
+	
+	\textbf{Technologies:} & Git/Perforce | Linux | Unity | .NET |NodeJS | AngularJS | React/Redux | Flutter \\& REST| Firebase | NoSQL/SQL | HTML/CSS | Android \\
+\end{tabular}
+\vspace{2mm}
+
+
+
+\header{Work Experience}
+\vspace{1mm}
+\textbf{Scientific Games} \hfill Reno, NV\\
+\textit{Software Developer } \hfill October 2019 | Current\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Designed and developed software solutions on SG's two core platforms (C++/ C\#) for Slot Machines/Systems 
+	\item Transitioned Linux sandboxes to 64-bit OS to streamline development workflow and increase productivity for remote work
+	\item Tasked with designing new features and implementations for speciality markets, providing design parity between existing products and new features leveraging (C\#/.NET)
+\end{itemize}
+\textbf{Clearplan (Startup) -> KAR Auction Services} \hfill Reno, NV\\
+\textit{Software Developer } \hfill April 2018 | Feb 2019\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Helped develop the digital platform to enhance current service offerings through real-time, cloud-based data delivery and reporting   
+	\item Using a JavaScript framework (AngularJS) to build a user login and authentication system for Cleardata, via a \textquotedbl{}NoSQL\textquotedbl{} database (Firebase)
+	\item Tasked with maintaining the native Android app (Java), built out new features and client requests on the platform
+\end{itemize}
+\textbf{International Game Technology} \hfill Reno, NV\\
+\textit{IT/Software Intern} \hfill May 2017 | June 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Provided internal first contact technical support to over 14,000 employees, with issues in Active Directory, Microsoft Office suite, SAP, OS, etc.
+	\item Worked on the creation and upkeep of technical documentation for IGT\textquotesingle{}s knowledge base
+	\item Partnered with Microsoft enterprise support to support IGT through a domain migration
+\end{itemize}
+\textbf{University of Nevada, Reno} \hfill Reno, NV\\
+\textit{Undergraduate Researcher \textbar{} Nano-Materials Lab} \hfill September 2017 | March 2018\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Used UNR’s Pronghorn CPU cluster to simulate Nano-molecular heat transfer properties under different simulation constraints ranging from temperature to particle alignment
+	\item Presented simulation results to staff by aggregating MatLab, Minitab and Excel into easy to view PowerPoint presentations.
+\end{itemize}
+
+
+
+%==== Education ====%
+\header{Education}
+\textbf{University of Nevada, Reno}\hfill Reno, NV\\
+B.Sc. Chemical Engineering \textit{GPA: 3.5} \hfill Sep 2014 - May 2018\\
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Coder-Quiz app}} {\sl Flutter, Dart, iOS, Android} \hfill https://github.com/ykhade/quizapp\\
+A quiz app written in Flutter for iOS and Android. Tests technical knowledge on programming. Offers a Google Auth login and account saves\\
+\vspace*{2mm}
+
+
+
+
+\ 
+\end{document}
